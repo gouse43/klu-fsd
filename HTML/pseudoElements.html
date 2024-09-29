@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo elements and classes</title>
+        <style>
+            input[type="number"]:out-of-range{
+                border: 2px solid red;
+            }
+            input[type="number"]:in-range{
+                border: 2px solid green;
+            }
+            input[type="email"]:invalid{
+                border: 2px solid red;
+            }
+            p::first-line{
+                text-decoration: underline;
+            }
+            p::first-letter{
+                font-size: 20px;
+                color: red;
+            }
+            p::before{
+                content: "KLU  :";
+            }
+            p::after{
+                content: "END";
+            }
+            li::marker{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="number" placeholder="Please enter age" min=1 max=18 style="width: 500px;"> <br><br>
+        <input type="email" placeholder="Enter email"><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem amet voluptate debitis minus veritatis molestiae vitae delectus nobis a reiciendis deleniti aliquid voluptatum hic quos, voluptatem rerum pariatur aperiam provident nisi odit laudantium, adipisci similique optio. Laudantium vel alias est amet esse nostrum quaerat suscipit omnis recusandae inventore, quis maxime expedita iusto laborum perspiciatis? Aspernatur, id hic? Ea quam magni nam odio consequatur deserunt et quisquam officia sint unde distinctio iusto, eveniet velit fugit vero? Blanditiis, accusantium iusto impedit, distinctio exercitationem cum similique rem explicabo magnam quis modi minus recusandae tempora! Error quisquam eius maxime mollitia quae debitis dicta? Ipsa.</p>
+
+        <ul>
+            <li>KLU</li>
+            <li>ExcelR</li>
+            <li>BDPS</li>
+            <li>JAVA</li>
+            <li>SPRING BOOT</li>
+        </ul>
+    </body>
+</html>
